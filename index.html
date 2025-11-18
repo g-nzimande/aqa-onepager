@@ -12,57 +12,68 @@
       }
     </style>
   </head>
+
   <body
-    class="text-gray-900"
+    class="text-gray-100"
     style="
-      background: #2a5f9b;
-      background: linear-gradient(
-        90deg,
-        rgba(42, 95, 155, 1) 0%,
-        rgba(87, 199, 133, 1) 50%,
-        rgba(83, 204, 237, 1) 100%
+      background-image: linear-gradient(
+        to right,
+        #0f2a52,
+        #0e2d5a,
+        #0c3063,
+        #0b336b,
+        #0b3674,
+        #153f7e,
+        #1e4988,
+        #265392,
+        #38669f,
+        #4b79ac,
+        #608cb9,
+        #759fc5
       );
+      background-attachment: fixed;
+      background-size: cover;
     "
   >
     <!-- Header -->
-    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-gray-100">
+    <header class="sticky top-0 z-50 bg-black/40 backdrop-blur-lg border-b border-white/10">
       <div class="mx-auto max-w-6xl px-4 h-16 flex items-center justify-between">
         <a href="#top" class="flex items-center gap-3">
           <div
-            class="h-9 w-9 rounded-xl bg-gradient-to-br from-sky-500 to-emerald-400 grid place-content-center text-white font-black"
+            class="h-9 w-9 rounded-xl bg-gradient-to-br from-blue-700 to-blue-300 grid place-content-center text-white font-black"
           >
             A
           </div>
-          <div class="leading-tight">
+          <div class="leading-tight text-white">
             <p class="font-extrabold tracking-tight">African Queer Achievers</p>
-            <p class="text-xs text-gray-500">Build knowledge. Build futures.</p>
+            <p class="text-xs text-blue-200">Build knowledge. Build futures.</p>
           </div>
         </a>
 
         <!-- Desktop nav -->
-        <nav class="hidden md:flex items-center gap-6 text-sm">
-          <a href="#problem" class="hover:text-sky-900">Problem</a>
-          <a href="#solution" class="hover:text-sky-900">Solution</a>
-          <a href="#features" class="hover:text-sky-900">Features</a>
-          <a href="#impact" class="hover:text-sky-900">Impact</a>
-          <a href="#model" class="hover:text-sky-900">Model</a>
-          <a href="#roadmap" class="hover:text-sky-900">Roadmap</a>
-          <a href="#contact" class="hover:text-sky-900">Contact</a>
+        <nav class="hidden md:flex items-center gap-6 text-sm text-blue-200">
+          <a href="#problem" class="hover:text-white">Problem</a>
+          <a href="#solution" class="hover:text-white">Solution</a>
+          <a href="#features" class="hover:text-white">Features</a>
+          <a href="#impact" class="hover:text-white">Impact</a>
+          <a href="#model" class="hover:text-white">Model</a>
+          <a href="#roadmap" class="hover:text-white">Roadmap</a>
+          <a href="#contact" class="hover:text-white">Contact</a>
         </nav>
 
         <div class="hidden md:block">
           <a
             href="#contact"
-            class="inline-flex items-center justify-center rounded-2xl px-4 py-2 text-sm font-semibold shadow-sm ring-1 ring-black/5 hover:shadow bg-sky-700 text-white hover:bg-sky-800"
+            class="rounded-2xl px-4 py-2 text-sm font-semibold shadow bg-white/20 text-white ring-1 ring-white/30 hover:bg-white/30"
           >
             Get Involved
           </a>
         </div>
 
-        <!-- Mobile nav button -->
+        <!-- Mobile nav toggle -->
         <button
           id="mobile-nav-toggle"
-          class="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-xl border border-gray-200 bg-white/80"
+          class="md:hidden inline-flex items-center justify-center h-10 w-10 rounded-xl border border-white/20 bg-white/10 text-white"
           aria-label="Toggle navigation"
         >
           <span class="text-xl">≡</span>
@@ -70,8 +81,8 @@
       </div>
 
       <!-- Mobile menu -->
-      <div id="mobile-nav" class="hidden md:hidden border-t border-gray-100 bg-white">
-        <div class="mx-auto max-w-6xl px-4 py-3 grid gap-2 text-sm">
+      <div id="mobile-nav" class="hidden md:hidden border-t border-white/10 bg-black/60 backdrop-blur-lg">
+        <div class="mx-auto max-w-6xl px-4 py-3 grid gap-2 text-sm text-blue-100">
           <a href="#problem" class="py-2">Problem</a>
           <a href="#solution" class="py-2">Solution</a>
           <a href="#features" class="py-2">Features</a>
@@ -81,7 +92,7 @@
           <a href="#contact" class="py-2">Contact</a>
           <a
             href="#contact"
-            class="inline-flex items-center justify-center rounded-2xl px-4 py-2 text-sm font-semibold shadow-sm ring-1 ring-black/5 hover:shadow bg-sky-700 text-white hover:bg-sky-800 mt-2"
+            class="rounded-2xl px-4 py-2 text-sm font-semibold shadow bg-white/20 text-white mt-2 hover:bg-white/30"
           >
             Get Involved
           </a>
@@ -95,9 +106,9 @@
         <svg class="h-full w-full" viewBox="0 0 1440 400" preserveAspectRatio="none">
           <defs>
             <linearGradient id="g" x1="0" x2="1">
-              <stop offset="0%" stop-color="#2a5f9b" />
-              <stop offset="50%" stop-color="#57c785" />
-              <stop offset="100%" stop-color="#53cced" />
+              <stop offset="0%" stop-color="#0f2a52" />
+              <stop offset="50%" stop-color="#265392" />
+              <stop offset="100%" stop-color="#608cb9" />
             </linearGradient>
           </defs>
           <path
@@ -106,36 +117,41 @@
           />
         </svg>
       </div>
+
       <div class="mx-auto max-w-6xl px-4 py-20 md:py-28">
         <div class="max-w-3xl">
           <span
-            class="inline-flex items-center gap-2 rounded-full bg-white/80 backdrop-blur px-3 py-1 text-xs font-semibold ring-1 ring-black/5"
+            class="inline-flex items-center gap-2 rounded-full bg-white/20 backdrop-blur px-3 py-1 text-xs font-semibold ring-1 ring-white/30 text-blue-100"
           >
             AQA — “Akha” / “Aga” • means “build”
           </span>
-          <h1 class="mt-4 text-3xl md:text-5xl font-extrabold tracking-tight text-white drop-shadow-sm">
+
+          <h1 class="mt-4 text-3xl md:text-5xl font-extrabold tracking-tight text-white drop-shadow">
             An AI-powered learning hub for LGBTIQ+ refugees & asylum seekers
           </h1>
-          <p class="mt-4 text-lg text-slate-100/90 md:max-w-2xl drop-shadow">
+
+          <p class="mt-4 text-lg text-blue-100 md:max-w-2xl">
             AQA curates language and skills courses, connects learners to inclusive tutors &
-            organisations, and personalises pathways to earn fast or develop long-term — no
-            formal documentation required.
+            organisations, and personalises pathways to earn fast or build long-term — all with
+            no documentation required.
           </p>
+
           <div class="mt-6 flex flex-wrap gap-3">
             <a
               href="#contact"
-              class="inline-flex items-center justify-center rounded-2xl px-4 py-2 text-sm font-semibold shadow-sm ring-1 ring-black/5 hover:shadow bg-sky-900 text-white hover:bg-sky-950"
+              class="rounded-2xl px-4 py-2 text-sm font-semibold shadow bg-white/20 text-white hover:bg-white/30 ring-1 ring-white/30"
             >
               Partner with us
             </a>
             <a
               href="#features"
-              class="inline-flex items-center justify-center rounded-2xl px-4 py-2 text-sm font-semibold shadow-sm ring-1 ring-white/60 text-sky-900 bg-white/90 hover:bg-white"
+              class="rounded-2xl px-4 py-2 text-sm font-semibold shadow bg-black/20 text-blue-100 hover:bg-black/30 ring-1 ring-white/20"
             >
               Explore features
             </a>
           </div>
-          <p class="mt-4 text-xs text-slate-100/90">
+
+          <p class="mt-4 text-xs text-blue-200">
             Pilot implemented with The Fruit Basket • Founder retains IP
           </p>
         </div>
@@ -144,68 +160,39 @@
 
     <!-- Problem -->
     <section id="problem" class="scroll-mt-24 py-16 md:py-24">
-      <div class="mx-auto max-w-6xl px-4 bg-white/90 rounded-3xl shadow-sm backdrop-blur">
-        <p class="text-xs tracking-widest uppercase text-sky-900 font-semibold mb-2 pt-8">
+      <div class="mx-auto max-w-6xl px-4 bg-white/10 rounded-3xl shadow-xl backdrop-blur text-white">
+        <p class="text-xs uppercase tracking-widest text-blue-200 font-semibold mb-2 pt-8">
           The Challenge
         </p>
-        <h2 class="text-2xl md:text-4xl font-extrabold text-gray-900 leading-tight">
+        <h2 class="text-2xl md:text-4xl font-extrabold leading-tight">
           Talent exists everywhere. Opportunity does not.
         </h2>
-        <p class="mt-3 text-gray-600 max-w-3xl">
+
+        <p class="mt-3 text-blue-100 max-w-3xl">
           Queer and displaced Africans face systemic barriers to education: missing IDs,
           discrimination, language hurdles, and platforms that don’t reflect their realities.
         </p>
 
-        <div class="mt-8 grid md:grid-cols-3 gap-5 pb-8">
-          <div class="rounded-2xl border border-gray-200 p-5 bg-white shadow-sm">
-            <div class="flex items-start gap-3">
-              <div
-                class="h-10 w-10 shrink-0 rounded-xl bg-gradient-to-br from-sky-700 to-emerald-500 text-white grid place-content-center font-bold"
-              >
-                ID
-              </div>
-              <div>
-                <h3 class="text-lg font-semibold text-gray-900">Documentation barriers</h3>
-                <p class="mt-1 text-gray-600 text-sm leading-relaxed">
-                  Formal education often demands IDs. AQA starts with access first, paperwork
-                  later.
-                </p>
-              </div>
-            </div>
+        <div class="mt-8 grid md:grid-cols-3 gap-5 pb-12">
+          <div class="rounded-2xl border border-white/20 p-5 bg-white/10 shadow-sm backdrop-blur">
+            <h3 class="text-lg font-semibold">Documentation barriers</h3>
+            <p class="mt-1 text-blue-100 text-sm">
+              Formal education often demands IDs. AQA starts with access first.
+            </p>
           </div>
 
-          <div class="rounded-2xl border border-gray-200 p-5 bg-white shadow-sm">
-            <div class="flex items-start gap-3">
-              <div
-                class="h-10 w-10 shrink-0 rounded-xl bg-gradient-to-br from-sky-700 to-emerald-500 text-white grid place-content-center font-bold"
-              >
-                ★
-              </div>
-              <div>
-                <h3 class="text-lg font-semibold text-gray-900">Cultural safety</h3>
-                <p class="mt-1 text-gray-600 text-sm leading-relaxed">
-                  Learners need affirming spaces. We verify tutors & partners for safety and
-                  inclusion.
-                </p>
-              </div>
-            </div>
+          <div class="rounded-2xl border border-white/20 p-5 bg-white/10 shadow-sm backdrop-blur">
+            <h3 class="text-lg font-semibold">Cultural safety</h3>
+            <p class="mt-1 text-blue-100 text-sm">
+              Learners need affirming, identity-safe spaces. AQA verifies all tutors & partners.
+            </p>
           </div>
 
-          <div class="rounded-2xl border border-gray-200 p-5 bg-white shadow-sm">
-            <div class="flex items-start gap-3">
-              <div
-                class="h-10 w-10 shrink-0 rounded-xl bg-gradient-to-br from-sky-700 to-emerald-500 text-white grid place-content-center font-bold"
-              >
-                ⌁
-              </div>
-              <div>
-                <h3 class="text-lg font-semibold text-gray-900">Language & context</h3>
-                <p class="mt-1 text-gray-600 text-sm leading-relaxed">
-                  Courses rarely localise to host-country realities. AQA recommends what works
-                  where people are.
-                </p>
-              </div>
-            </div>
+          <div class="rounded-2xl border border-white/20 p-5 bg-white/10 shadow-sm backdrop-blur">
+            <h3 class="text-lg font-semibold">Language & context</h3>
+            <p class="mt-1 text-blue-100 text-sm">
+              Courses rarely localise to host-country realities. AQA fixes that.
+            </p>
           </div>
         </div>
       </div>
@@ -213,51 +200,36 @@
 
     <!-- Solution -->
     <section id="solution" class="scroll-mt-24 py-16 md:py-24">
-      <div class="mx-auto max-w-6xl px-4 bg-white/90 rounded-3xl shadow-sm backdrop-blur">
-        <p class="text-xs tracking-widest uppercase text-sky-900 font-semibold mb-2 pt-8">
+      <div class="mx-auto max-w-6xl px-4 bg-white/10 rounded-3xl shadow-xl backdrop-blur text-white">
+        <p class="text-xs uppercase tracking-widest text-blue-200 font-semibold mb-2 pt-8">
           Our Solution
         </p>
-        <h2 class="text-2xl md:text-4xl font-extrabold text-gray-900 leading-tight">
+
+        <h2 class="text-2xl md:text-4xl font-extrabold leading-tight">
           Personalised learning without borders
         </h2>
-        <p class="mt-3 text-gray-600 max-w-3xl">
-          AI-driven recommendations connect learners to language teachers, skills trainers, and
-          inclusive organisations — online or in-community.
+
+        <p class="mt-3 text-blue-100 max-w-3xl">
+          AI-driven recommendations connect learners to language teachers, skills trainers and
+          inclusive organisations.
         </p>
 
-        <div class="mt-8 grid md:grid-cols-2 gap-6 items-start pb-8">
-          <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-            <ol class="space-y-4 text-sm text-gray-700">
-              <li>
-                <span class="font-semibold">1) Goal intake:</span> learners share aims — earn
-                now or grow for the long-term.
-              </li>
-              <li>
-                <span class="font-semibold">2) AI curation:</span> courses & tutors matched by
-                level, location, and language.
-              </li>
-              <li>
-                <span class="font-semibold">3) Safe onboarding:</span> pseudonymous accounts;
-                progress, not papers, proves commitment.
-              </li>
-              <li>
-                <span class="font-semibold">4) Ongoing guidance:</span> adaptive plans,
-                reminders, and check-ins.
-              </li>
+        <div class="mt-8 grid md:grid-cols-2 gap-6 pb-12">
+          <div class="rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur">
+            <ol class="space-y-4 text-blue-100 text-sm">
+              <li><strong>1) Goal intake:</strong> earn now or grow long-term.</li>
+              <li><strong>2) AI curation:</strong> courses matched by level, goals & location.</li>
+              <li><strong>3) Safe onboarding:</strong> pseudonyms welcome.</li>
+              <li><strong>4) Ongoing guidance:</strong> adaptive support and progression.</li>
             </ol>
           </div>
-          <div
-            class="rounded-2xl border border-gray-200 bg-gradient-to-br from-white to-sky-50 p-6 shadow-sm"
-          >
-            <ul class="grid gap-3 text-sm text-gray-700">
-              <li>
-                • Language & cultural exchange (African languages, business English)
-              </li>
-              <li>
-                • Digital & financial literacy; gig-readiness; creative micro-entrepreneurship
-              </li>
-              <li>• Organisation-hosted webinars and local learning hubs</li>
-              <li>• Optional referral codes for NGOs/UN agencies</li>
+
+          <div class="rounded-2xl border border-white/20 bg-white/5 p-6 backdrop-blur">
+            <ul class="grid gap-3 text-blue-100 text-sm">
+              <li>• Language exchange & host-country integration</li>
+              <li>• Digital & financial literacy</li>
+              <li>• Gig-readiness & micro-entrepreneurship</li>
+              <li>• Partner organisation webinars</li>
             </ul>
           </div>
         </div>
@@ -266,109 +238,56 @@
 
     <!-- Features -->
     <section id="features" class="scroll-mt-24 py-16 md:py-24">
-      <div class="mx-auto max-w-6xl px-4 bg-white/90 rounded-3xl shadow-sm backdrop-blur">
-        <p class="text-xs tracking-widest uppercase text-sky-900 font-semibold mb-2 pt-8">
+      <div class="mx-auto max-w-6xl px-4 bg-white/10 rounded-3xl shadow-xl backdrop-blur text-white">
+        <p class="text-xs uppercase tracking-widest text-blue-200 font-semibold mb-2 pt-8">
           Key Features
         </p>
-        <h2 class="text-2xl md:text-4xl font-extrabold text-gray-900 leading-tight">
+
+        <h2 class="text-2xl md:text-4xl font-extrabold leading-tight">
           What’s in the MVP?
         </h2>
 
-        <div class="mt-8 grid md:grid-cols-3 gap-5 pb-8">
-          <div class="rounded-2xl border border-gray-200 p-5 bg-white shadow-sm">
-            <div class="flex items-start gap-3">
-              <div
-                class="h-10 w-10 shrink-0 rounded-xl bg-gradient-to-br from-sky-700 to-emerald-500 text-white grid place-content-center font-bold"
-              >
-                AI
-              </div>
-              <div>
-                <h3 class="text-lg font-semibold text-gray-900">AI Course Recommender</h3>
-                <p class="mt-1 text-gray-600 text-sm leading-relaxed">
-                  Goal-driven pathways tuned to learner level, host-country, and language.
-                </p>
-              </div>
-            </div>
+        <div class="mt-8 grid md:grid-cols-3 gap-5 pb-12">
+          <div class="rounded-2xl border border-white/20 p-5 bg-white/10 backdrop-blur shadow">
+            <h3 class="font-semibold text-lg">AI Course Recommender</h3>
+            <p class="mt-1 text-blue-100 text-sm">
+              Goal-oriented learning paths tuned to level, location and preferred language.
+            </p>
           </div>
 
-          <div class="rounded-2xl border border-gray-200 p-5 bg-white shadow-sm">
-            <div class="flex items-start gap-3">
-              <div
-                class="h-10 w-10 shrink-0 rounded-xl bg-gradient-to-br from-sky-700 to-emerald-500 text-white grid place-content-center font-bold"
-              >
-                ◎
-              </div>
-              <div>
-                <h3 class="text-lg font-semibold text-gray-900">Tutor & Org Marketplace</h3>
-                <p class="mt-1 text-gray-600 text-sm leading-relaxed">
-                  Verified inclusive educators and NGOs can list courses & webinars.
-                </p>
-              </div>
-            </div>
+          <div class="rounded-2xl border border-white/20 p-5 bg-white/10 backdrop-blur shadow">
+            <h3 class="font-semibold text-lg">Tutor & Org Marketplace</h3>
+            <p class="mt-1 text-blue-100 text-sm">
+              Verified inclusive educators and NGOs can offer courses & webinars.
+            </p>
           </div>
 
-          <div class="rounded-2xl border border-gray-200 p-5 bg-white shadow-sm">
-            <div class="flex items-start gap-3">
-              <div
-                class="h-10 w-10 shrink-0 rounded-xl bg-gradient-to-br from-sky-700 to-emerald-500 text-white grid place-content-center font-bold"
-              >
-                🔒
-              </div>
-              <div>
-                <h3 class="text-lg font-semibold text-gray-900">No-ID Onboarding</h3>
-                <p class="mt-1 text-gray-600 text-sm leading-relaxed">
-                  Email or phone sign-up; privacy by design; progress tracking.
-                </p>
-              </div>
-            </div>
+          <div class="rounded-2xl border border-white/20 p-5 bg-white/10 backdrop-blur shadow">
+            <h3 class="font-semibold text-lg">No-ID Onboarding</h3>
+            <p class="mt-1 text-blue-100 text-sm">
+              Email or phone sign-up; privacy-first, pseudonyms welcome.
+            </p>
           </div>
 
-          <div class="rounded-2xl border border-gray-200 p-5 bg-white shadow-sm">
-            <div class="flex items-start gap-3">
-              <div
-                class="h-10 w-10 shrink-0 rounded-xl bg-gradient-to-br from-sky-700 to-emerald-500 text-white grid place-content-center font-bold"
-              >
-                ☕
-              </div>
-              <div>
-                <h3 class="text-lg font-semibold text-gray-900">“Buy a Coffee” Support</h3>
-                <p class="mt-1 text-gray-600 text-sm leading-relaxed">
-                  Direct micro-donations to tutors or content creators.
-                </p>
-              </div>
-            </div>
+          <div class="rounded-2xl border border-white/20 p-5 bg-white/10 backdrop-blur shadow">
+            <h3 class="font-semibold text-lg">“Buy a Coffee” Support</h3>
+            <p class="mt-1 text-blue-100 text-sm">
+              Community-donations to support tutors & creators.
+            </p>
           </div>
 
-          <div class="rounded-2xl border border-gray-200 p-5 bg-white shadow-sm">
-            <div class="flex items-start gap-3">
-              <div
-                class="h-10 w-10 shrink-0 rounded-xl bg-gradient-to-br from-sky-700 to-emerald-500 text-white grid place-content-center font-bold"
-              >
-                📊
-              </div>
-              <div>
-                <h3 class="text-lg font-semibold text-gray-900">Partner Insights</h3>
-                <p class="mt-1 text-gray-600 text-sm leading-relaxed">
-                  Anonymised dashboards for NGOs: reach, completion, outcomes.
-                </p>
-              </div>
-            </div>
+          <div class="rounded-2xl border border-white/20 p-5 bg-white/10 backdrop-blur shadow">
+            <h3 class="font-semibold text-lg">Partner Insights</h3>
+            <p class="mt-1 text-blue-100 text-sm">
+              Anonymised dashboards showing reach, completion and outcomes.
+            </p>
           </div>
 
-          <div class="rounded-2xl border border-gray-200 p-5 bg-white shadow-sm">
-            <div class="flex items-start gap-3">
-              <div
-                class="h-10 w-10 shrink-0 rounded-xl bg-gradient-to-br from-sky-700 to-emerald-500 text-white grid place-content-center font-bold"
-              >
-                📱
-              </div>
-              <div>
-                <h3 class="text-lg font-semibold text-gray-900">Mobile-first UX</h3>
-                <p class="mt-1 text-gray-600 text-sm leading-relaxed">
-                  Lightweight, low-bandwidth friendly, multilingual interface.
-                </p>
-              </div>
-            </div>
+          <div class="rounded-2xl border border-white/20 p-5 bg-white/10 backdrop-blur shadow">
+            <h3 class="font-semibold text-lg">Mobile-first</h3>
+            <p class="mt-1 text-blue-100 text-sm">
+              Low-data, lightweight interface optimised for Africa.
+            </p>
           </div>
         </div>
       </div>
@@ -376,85 +295,73 @@
 
     <!-- Impact -->
     <section id="impact" class="scroll-mt-24 py-16 md:py-24">
-      <div class="mx-auto max-w-6xl px-4 bg-white/90 rounded-3xl shadow-sm backdrop-blur">
-        <p class="text-xs tracking-widest uppercase text-sky-900 font-semibold mb-2 pt-8">
+      <div class="mx-auto max-w-6xl px-4 bg-white/10 rounded-3xl shadow-xl backdrop-blur text-white">
+        <p class="text-xs uppercase tracking-widest text-blue-200 font-semibold mb-2 pt-8">
           Impact
         </p>
-        <h2 class="text-2xl md:text-4xl font-extrabold text-gray-900 leading-tight">
+
+        <h2 class="text-2xl md:text-4xl font-extrabold leading-tight">
           Measure what matters
         </h2>
-        <p class="mt-3 text-gray-600 max-w-3xl">
-          Access is only the beginning. We track learning that converts to income, wellbeing,
-          and belonging.
+
+        <p class="mt-3 text-blue-100 max-w-3xl">
+          Access is only the beginning. We track learning that converts to income, wellbeing and belonging.
         </p>
 
-        <div class="mt-8 grid md:grid-cols-4 gap-5">
-          <div
-            class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm text-center"
-          >
-            <p class="text-3xl font-extrabold tracking-tight text-sky-800">10,000</p>
-            <p class="mt-1 text-xs uppercase tracking-widest text-gray-500">
-              Learners onboarded
-            </p>
+        <div class="mt-8 grid md:grid-cols-4 gap-5 pb-12">
+          <div class="rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur text-center">
+            <p class="text-3xl font-extrabold text-blue-200">10,000</p>
+            <p class="text-xs uppercase tracking-widest text-blue-100">Learners onboarded</p>
           </div>
-          <div
-            class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm text-center"
-          >
-            <p class="text-3xl font-extrabold tracking-tight text-sky-800">500</p>
-            <p class="mt-1 text-xs uppercase tracking-widest text-gray-500">
-              Active tutors
-            </p>
+
+          <div class="rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur text-center">
+            <p class="text-3xl font-extrabold text-blue-200">500</p>
+            <p class="text-xs uppercase tracking-widest text-blue-100">Active tutors</p>
           </div>
-          <div
-            class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm text-center"
-          >
-            <p class="text-3xl font-extrabold tracking-tight text-sky-800">60</p>
-            <p class="mt-1 text-xs uppercase tracking-widest text-gray-500">
-              Partner orgs
-            </p>
+
+          <div class="rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur text-center">
+            <p class="text-3xl font-extrabold text-blue-200">60</p>
+            <p class="text-xs uppercase tracking-widest text-blue-100">Partner orgs</p>
           </div>
-          <div
-            class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm text-center"
-          >
-            <p class="text-3xl font-extrabold tracking-tight text-emerald-700">+25%</p>
-            <p class="mt-1 text-xs uppercase tracking-widest text-gray-500">
-              Income uplift (12m)
-            </p>
+
+          <div class="rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur text-center">
+            <p class="text-3xl font-extrabold text-blue-300">+25%</p>
+            <p class="text-xs uppercase tracking-widest text-blue-100">Income uplift (12m)</p>
           </div>
         </div>
-        <p class="mt-6 text-xs text-gray-500 pb-8">
-          *Illustrative targets for pilot planning; final KPIs to be agreed with partners.*
-        </p>
       </div>
     </section>
 
-    <!-- Business model -->
+    <!-- Business Model -->
     <section id="model" class="scroll-mt-24 py-16 md:py-24">
-      <div class="mx-auto max-w-6xl px-4 bg-white/90 rounded-3xl shadow-sm backdrop-blur">
-        <p class="text-xs tracking-widest uppercase text-sky-900 font-semibold mb-2 pt-8">
+      <div class="mx-auto max-w-6xl px-4 bg-white/10 rounded-3xl shadow-xl backdrop-blur text-white">
+        <p class="text-xs uppercase tracking-widest text-blue-200 font-semibold mb-2 pt-8">
           Business Model
         </p>
-        <h2 class="text-2xl md:text-4xl font-extrabold text-gray-900 leading-tight">
+
+        <h2 class="text-2xl md:text-4xl font-extrabold leading-tight">
           Sustainable, ethical, community-led
         </h2>
 
-        <div class="mt-8 grid md:grid-cols-3 gap-5 pb-8">
-          <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+        <div class="mt-8 grid md:grid-cols-3 gap-5 pb-12">
+          <div class="rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur">
             <h3 class="font-semibold">Organisational subscriptions</h3>
-            <p class="mt-2 text-sm text-gray-700">
-              NGOs & education providers host courses and access anonymised analytics.
+            <p class="mt-2 text-blue-100 text-sm">
+              NGOs & education providers host courses and access anonymised insights.
             </p>
           </div>
-          <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+
+          <div class="rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur">
             <h3 class="font-semibold">Ads & sponsorships</h3>
-            <p class="mt-2 text-sm text-gray-700">
-              Carefully vetted mission-aligned partners support free access.
+            <p class="mt-2 text-blue-100 text-sm">
+              Carefully vetted mission-aligned partners support access.
             </p>
           </div>
-          <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+
+          <div class="rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur">
             <h3 class="font-semibold">Community donations</h3>
-            <p class="mt-2 text-sm text-gray-700">
-              “Buy a coffee” to support learners, tutors, and content creation.
+            <p class="mt-2 text-blue-100 text-sm">
+              “Buy a coffee” to support tutors, learners and creators.
             </p>
           </div>
         </div>
@@ -463,37 +370,42 @@
 
     <!-- Roadmap -->
     <section id="roadmap" class="scroll-mt-24 py-16 md:py-24">
-      <div class="mx-auto max-w-6xl px-4 bg-white/90 rounded-3xl shadow-sm backdrop-blur">
-        <p class="text-xs tracking-widest uppercase text-sky-900 font-semibold mb-2 pt-8">
+      <div class="mx-auto max-w-6xl px-4 bg-white/10 rounded-3xl shadow-xl backdrop-blur text-white">
+        <p class="text-xs uppercase tracking-widest text-blue-200 font-semibold mb-2 pt-8">
           Roadmap
         </p>
-        <h2 class="text-2xl md:text-4xl font-extrabold text-gray-900 leading-tight">
+
+        <h2 class="text-2xl md:text-4xl font-extrabold leading-tight">
           From pilot to policy
         </h2>
-        <p class="mt-3 text-gray-600 max-w-3xl">
-          We start where the need and networks are strongest, and grow with partners.
+
+        <p class="mt-3 text-blue-100 max-w-3xl">
+          We start where the need and networks are strongest, and scale with partners.
         </p>
 
-        <div class="mt-8 grid md:grid-cols-3 gap-5 pb-8">
-          <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+        <div class="mt-8 grid md:grid-cols-3 gap-5 pb-12">
+          <div class="rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur">
             <h3 class="font-semibold">Phase 1 — Pilot (0–9m)</h3>
-            <ul class="mt-2 text-sm text-gray-700 list-disc pl-5 space-y-1">
+            <ul class="mt-2 text-blue-100 text-sm list-disc pl-5">
               <li>South Africa • Uganda • Kenya</li>
-              <li>MVP launch (web, mobile-friendly)</li>
-              <li>10 org partners; 1k learners</li>
+              <li>MVP launch (web-based)</li>
+              <li>1,000 learners onboarded</li>
+              <li>10 organisational partners</li>
             </ul>
           </div>
-          <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+
+          <div class="rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur">
             <h3 class="font-semibold">Phase 2 — Scale (10–18m)</h3>
-            <ul class="mt-2 text-sm text-gray-700 list-disc pl-5 space-y-1">
-              <li>AI tutor + native app</li>
+            <ul class="mt-2 text-blue-100 text-sm list-disc pl-5">
+              <li>AI tutor & native app</li>
               <li>Regional expansion</li>
-              <li>Donor & accelerator rounds</li>
+              <li>Partnerships & accelerators</li>
             </ul>
           </div>
-          <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+
+          <div class="rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur">
             <h3 class="font-semibold">Phase 3 — Policy (18–36m)</h3>
-            <ul class="mt-2 text-sm text-gray-700 list-disc pl-5 space-y-1">
+            <ul class="mt-2 text-blue-100 text-sm list-disc pl-5">
               <li>Accreditation pilots</li>
               <li>Registration body integrations</li>
               <li>Pan-African rollout</li>
@@ -505,84 +417,86 @@
 
     <!-- Contact -->
     <section id="contact" class="scroll-mt-24 py-16 md:py-24">
-      <div class="mx-auto max-w-6xl px-4 bg-white/90 rounded-3xl shadow-sm backdrop-blur">
-        <p class="text-xs tracking-widest uppercase text-sky-900 font-semibold mb-2 pt-8">
+      <div class="mx-auto max-w-6xl px-4 bg-white/10 rounded-3xl shadow-xl backdrop-blur text-white">
+        <p class="text-xs uppercase tracking-widest text-blue-200 font-semibold mb-2 pt-8">
           Contact
         </p>
-        <h2 class="text-2xl md:text-4xl font-extrabold text-gray-900 leading-tight">
+
+        <h2 class="text-2xl md:text-4xl font-extrabold leading-tight">
           Join us in building inclusive education
         </h2>
 
-        <div class="mt-8 grid md:grid-cols-2 gap-6 items-start pb-8">
-          <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+        <div class="mt-8 grid md:grid-cols-2 gap-6 pb-12">
+          <div class="rounded-2xl border border-white/20 bg-white/10 p-6 backdrop-blur">
             <form
               onsubmit="event.preventDefault(); alert('Thanks! We’ll be in touch.');"
               class="grid gap-3"
             >
               <label class="grid gap-1 text-sm">
-                <span class="text-gray-700">Name</span>
+                <span>Name</span>
                 <input
                   required
-                  class="rounded-xl border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sky-600"
+                  class="rounded-xl border border-white/20 bg-white/10 px-3 py-2 text-white placeholder-blue-200 focus:ring-2 focus:ring-blue-300"
                   placeholder="Your name"
                 />
               </label>
+
               <label class="grid gap-1 text-sm">
-                <span class="text-gray-700">Email</span>
+                <span>Email</span>
                 <input
                   type="email"
                   required
-                  class="rounded-xl border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sky-600"
+                  class="rounded-xl border border-white/20 bg-white/10 px-3 py-2 text-white placeholder-blue-200 focus:ring-2 focus:ring-blue-300"
                   placeholder="you@domain"
                 />
               </label>
+
               <label class="grid gap-1 text-sm">
-                <span class="text-gray-700">How would you like to collaborate?</span>
+                <span>How would you like to collaborate?</span>
                 <textarea
                   rows="4"
-                  class="rounded-xl border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-sky-600"
+                  class="rounded-xl border border-white/20 bg-white/10 px-3 py-2 text-white placeholder-blue-200 focus:ring-2 focus:ring-blue-300"
                   placeholder="Partnerships, courses, funding…"
                 ></textarea>
               </label>
-              <div class="flex flex-wrap gap-3">
+
+              <div class="flex flex-wrap gap-3 mt-2">
                 <button
                   type="submit"
-                  class="rounded-2xl bg-sky-700 text-white font-semibold px-5 py-2.5 shadow-sm ring-1 ring-black/5 hover:bg-sky-800"
+                  class="rounded-2xl bg-white/20 px-5 py-2.5 font-semibold shadow ring-1 ring-white/30 hover:bg-white/30"
                 >
                   Send
                 </button>
+
                 <a
                   href="mailto:info@aqa.africa"
-                  class="inline-flex items-center justify-center rounded-2xl px-4 py-2 text-sm font-semibold shadow-sm ring-1 ring-sky-200 text-sky-800 bg-white hover:bg-sky-50"
+                  class="rounded-2xl px-4 py-2 text-sm font-semibold shadow bg-black/20 ring-1 ring-white/20 hover:bg-black/30"
                 >
                   Email us
                 </a>
               </div>
-              <p class="text-xs text-gray-500 mt-1">
-                By submitting, you agree to our respectful-use & privacy principles.
-              </p>
             </form>
           </div>
 
-          <div
-            class="rounded-2xl border border-gray-200 bg-gradient-to-br from-white to-sky-50 p-6 shadow-sm"
-          >
+          <div class="rounded-2xl border border-white/20 bg-white/5 p-6 backdrop-blur">
             <h3 class="font-semibold">Founder’s note</h3>
-            <p class="mt-2 text-sm text-gray-700">
-              “African Queer Achievers was born from the belief that knowledge is a right, not
-              a privilege. We’re using technology to rebuild what displacement has taken away
-              — dignity, access, and hope.”
+            <p class="mt-2 text-blue-100 text-sm">
+              “African Queer Achievers was born from the belief that knowledge is a right, not a privilege.
+              We’re using technology to rebuild what displacement takes away — access, dignity and hope.”
             </p>
-            <p class="mt-3 text-sm text-gray-700">
+
+            <p class="mt-3 text-sm text-blue-200">
               — Gorata Nzimande, Founder • COO at The Fruit Basket
             </p>
-            <div class="mt-4 grid gap-2 text-sm">
+
+            <div class="mt-4 grid gap-2 text-sm text-blue-200">
               <div class="flex items-center gap-2">
-                <span class="h-2 w-2 rounded-full bg-sky-700"></span>
+                <span class="h-2 w-2 bg-blue-300 rounded-full"></span>
                 <span>Johannesburg, South Africa</span>
               </div>
+
               <div class="flex items-center gap-2">
-                <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+                <span class="h-2 w-2 bg-blue-400 rounded-full"></span>
                 <span>info@aqa.africa • aqa.africa</span>
               </div>
             </div>
@@ -592,17 +506,16 @@
     </section>
 
     <!-- Footer -->
-    <footer class="border-t border-white/50 py-10 mt-8">
-      <div
-        class="mx-auto max-w-6xl px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-white/90"
-      >
+    <footer class="py-10 border-t border-white/20 mt-10">
+      <div class="mx-auto max-w-6xl px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-blue-100">
         <p class="text-xs">
           © <span id="year"></span> AQA — African Queer Achievers. All rights reserved.
         </p>
+
         <div class="flex items-center gap-4 text-xs">
-          <a href="#" class="hover:underline">Respectful-Use</a>
-          <a href="#" class="hover:underline">Privacy</a>
-          <a href="#top" class="hover:underline">Back to top</a>
+          <a href="#" class="hover:text-white">Respectful-Use</a>
+          <a href="#" class="hover:text-white">Privacy</a>
+          <a href="#top" class="hover:text-white">Back to top</a>
         </div>
       </div>
     </footer>
